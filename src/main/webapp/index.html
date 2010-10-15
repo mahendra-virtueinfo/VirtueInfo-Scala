@@ -1,0 +1,13 @@
+<lift:surround with="default" at="content"> 
+ <h2>Welcome to Our Scala+Lift project!</h2> 
+    <h1><lift:loc id="title">Title</lift:loc></h1>
+
+  <lift:HelloWorld.lang form="post">
+    <span>My language: <showLoc:lang/></span>
+
+    <div>
+      Set locale <showLoc:select/> <input type="submit" value="Change"/>
+    </div>
+  </lift:HelloWorld.lang>
+
+</lift:surround>

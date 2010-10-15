@@ -1,0 +1,131 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:lift="http://liftweb.net/">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    
+		<title> Welcome to paradise world </title>
+    <lift:CSS.blueprint />
+   <script id="jquery" src="/classpath/jquery.js" type="text/javascript"/>
+    <script id="json" src="/classpath/json.js" type="text/javascript"/>
+    <style type="text/css">
+/* <![CDATA[ */
+.edit_error_class {
+  display: block;
+  color: red;
+}
+
+.sidebar ul {
+	margin:0;
+	padding:0;
+	border-bottom:1px solid #ccc;
+}
+	 
+
+.sidebar ul li {
+	margin:0;
+	padding:0;
+	list-style:none;
+	border:1px solid #ccc;
+	border-bottom:none;
+}
+
+.sidebar ul li a {
+	display:block;
+	padding:3px;
+	text-indent:30px;
+	text-decoration:none;
+}
+
+.sidebar ul li span {
+	display:block;
+	padding:3px;
+	text-indent:30px;
+	text-decoration:none;
+}
+
+.sidebar ul li a:hover {
+	background-color: #eee;
+}
+
+input{
+  border:1px solid #eee;
+  margin:5px;
+}
+textarea{
+  height:100px;
+  width:175px;
+  margin:5px;
+}
+#lift__noticesContainer___notice {
+    background-color: green;
+	color:yellow;
+	font-weight:bold;
+	font-size:large;
+}
+#lift__noticesContainer___notice ul{
+list-style-type:none;
+}
+
+
+#lift__noticesContainer___warn {
+    background-color: yellow;
+	color:red;
+	font-weight:bold;
+	font-size:large;
+}
+#lift__noticesContainer___warn ul{
+list-style-type:none;
+}
+
+
+#lift__noticesContainer___error {
+    background-color: red;
+	color:yellow;
+	font-weight:bold;
+	font-size:large;
+}
+#lift__noticesContainer___error ul{
+list-style-type:none;
+}
+
+
+
+  /* ]]> */
+  </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column span-12 last" style="text-align: right">
+        <h1 class="alt"> Lift World</h1>
+	 </div>
+	 <div style="width:400px;text-align:left;">
+	 <ul>
+		  <li><a href="?locale=en_US">in english</a></li>
+		  <li><a href="?locale=fi_FI">in finnish</a></li>
+	 </ul> 
+	</div>
+      <hr/>
+
+	  <lift:msgs/>
+
+      <div class="column span-6 colborder sidebar">
+        <hr class="space" />
+        <lift:Menu.builder />	
+        <div>
+          <hr class="space" />
+        </div>
+      </div>
+
+      <div class="column span-17 last">
+        <lift:bind name="content" />
+      </div>
+
+      <hr />
+      <div class="column span-23 last" style="text-align: center">
+        <h4 class="alt"> Powered by <a href="http://www.liftweb.net"><i>Lift</i></a></h4>
+      </div>
+      
+    </div>
+  </body>
+</html>
